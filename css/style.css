@@ -233,10 +233,10 @@ img:nth-child(3){
     }
  } 
 
- @media screen and (max-width: 570px) {
+ @media screen and (max-width: 414px) {
 
     .container{
-        max-width: 500px;
+        max-width: 400px;
 
         margin: 0 auto;
     }
@@ -306,8 +306,8 @@ img:nth-child(3){
 
     #img{
         position: relative;
-        width: 168px;
-        height: 500px;
+        width: 120px;
+        height: 400px;
     }
 
     #frame_text{
@@ -315,8 +315,15 @@ img:nth-child(3){
         flex-direction: column;
         position: relative;
         left: 0;
-        width: 600px;
+        width: 400px;
         top: 0px;
      }
+
+     #frame_text h1{
+         width: 400px;
+     }
+     #frame_text p{
+        width: 400px;
+    }
 
 }
