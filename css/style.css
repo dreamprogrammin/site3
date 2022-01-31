@@ -276,7 +276,7 @@ img:nth-child(3){
     }
 
     .header_nav.active{
-        top: 3rem;
+        top: 3.5rem;
         width: 100%;
         left: 0;
     }
@@ -325,5 +325,27 @@ img:nth-child(3){
      #frame_text p{
         width: 400px;
     }
+
+    .img_frame{
+        gap: 20px;
+    }
+
+    img:nth-child(2){
+        top: 142px;
+     
+        animation-name: img-animation-media;
+        animation-duration: 3s;
+        animation-delay: 500ms;
+     
+     }
+
+     @keyframes img-animation-media {
+         0%{
+             top: 0;
+         }
+         100%{
+             top:142px
+         }
+     }
 
 }
