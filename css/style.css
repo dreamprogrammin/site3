@@ -113,10 +113,10 @@ span {
     border-radius: 5px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 570px) {
 
     .container{
-        max-width: 550px;
+        max-width: 500px;
 
         margin: 0 auto;
     }
@@ -179,6 +179,10 @@ span {
         overflow: hidden;
     }
 
+    .main_frame_1{
+        width: ;
+    }
+
     .intro{
         display: flex;
         flex-direction: column;
@@ -214,6 +218,7 @@ main{
     flex-direction: column;
     width: 100%;
 }
+
 
 .intro{
     display: flex;
