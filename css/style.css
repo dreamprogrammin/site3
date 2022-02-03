@@ -10,6 +10,7 @@ body, html {
     background-color: #fff;
 }
 
+
 .header{
     position: fixed;
     z-index: 1;
@@ -409,6 +410,31 @@ main{
     margin-top: 16px;
 }
 
+.item_cards a {
+    display: inline-block;
+    padding-right: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    width: 110px;
+    margin-top: 32px;
+    text-decoration: none;
+
+    color: #424F7B;
+    background: url(../img/vector.svg) no-repeat 90%  center;
+    transition: ease 0.3s;
+}
+
+.item_cards a:hover{
+    background: url(../img/vector.svg) no-repeat right  center;
+}
+
+/*Пятый блок*/
+
+
+
 
  @media screen and (max-width: 414px) {
 
@@ -572,5 +598,8 @@ main{
     
     .frame_item{
         flex-direction: column;
+    }
+    .img_5{
+        width: 400px;
     }
 }
