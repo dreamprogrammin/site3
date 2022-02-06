@@ -12,3 +12,19 @@ const headerMenuActiv = () =>{
 }
 
 navMenu.addEventListener('click', headerMenuActiv)
+
+const accordionItem = document.querySelectorAll('.accordion_item') 
+
+for (items of accordionItem){
+    items.addEventListener('click', function (){
+        if(this.classList.contains('active')){
+            this.classList.remove('active')
+        }
+        else {
+            for (el of accordionItem) {
+                el.classList.remove('active')
+            }
+            this.classList.add('active')
+        }
+    })
+}

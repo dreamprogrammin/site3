@@ -433,6 +433,146 @@ main{
 
 /*Пятый блок*/
 
+.main_frame_5{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.frame_text_5{
+    margin-top: 162px;
+}
+
+.frame_text_5 p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    
+    
+    color: #424F7B;    
+}
+
+.frame_text_5 h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    max-width: 407px;
+    /* identical to box height, or 54px */
+    
+    letter-spacing: -0.01em;
+    
+    color: #192252;   
+
+    margin-top: 12px;
+}
+
+.frame_text_5 h4 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+    
+    color: #848FAC;
+
+    margin-top: 24px;
+    max-width: 384px;
+}
+
+.item_link_5{
+    display: flex;
+    height: 51px;
+    align-items: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+.frame_text_5 a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #0E1734;
+    text-decoration: none;
+}
+
+.frame_info {
+    display: flex;
+    flex-direction: column;
+    max-width: 588px;
+    width: 100%;
+    margin-top: 80px;
+    gap: 24px;
+}
+
+.accordion_item {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 31px -4px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+
+
+.accordion_title {
+    position: relative;
+    padding: 32px 0 0 36px;
+    height: 36px;
+}
+
+.accordion_h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+    
+    color: #424F7B;
+}
+
+
+.accordion_title::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    top: 45%;
+    background: url(../img/Ellipse.jpg) no-repeat ;
+    transition: 0.3s ease;
+}
+
+.accordion_item.active .accordion_title::before{
+    transform: rotate(180deg);
+    background: url(../img/Ellipse2.jpg) no-repeat center; 
+}
+
+.accordion_content {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    
+    color: #848FAC;
+    padding: 24px 0 0 36px;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.accordion_item.active .accordion_content {
+    height: 101px;
+}
+
 
 
 
@@ -601,5 +741,13 @@ main{
     }
     .img_5{
         width: 400px;
+    }
+
+    .main_frame_5{
+        flex-direction: column;
+    }
+
+    .accordion_h1 {
+        font-size: 18px;
     }
 }
