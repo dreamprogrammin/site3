@@ -28,3 +28,38 @@ for (items of accordionItem){
         }
     })
 }
+
+const sliderLine = document.querySelectorAll('.slider_line')
+const dot = document.querySelectorAll('.dot')
+let index = 0
+
+const sliderActive = (n) =>{
+    for (sliders of sliderLine) {
+        sliders.classList.remove('active')
+    }
+    sliderLine[n].classList.add('active')
+    console.log(n)
+}
+
+const dotsActive = (p) =>{
+    for (dots of dot){
+        dots.classList.remove('active')
+    }
+    dot[p].classList.add('active')
+}
+
+
+setInterval(() => {
+    if (index == sliderLine.length - 1){
+        index = 0
+        sliderActive(index)
+        dotsActive(index)
+    }
+    else {
+        index++
+        sliderActive(index)
+        dotsActive(index)
+    }
+}, 2000);
+
+
