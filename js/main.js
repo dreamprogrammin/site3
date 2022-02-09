@@ -48,6 +48,8 @@ const dotsActive = (p) =>{
     dot[p].classList.add('active')
 }
 
+addEventListener('click', dotsActive)
+
 
 setInterval(() => {
     if (index == sliderLine.length - 1){

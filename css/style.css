@@ -590,7 +590,7 @@ main{
     display: none;
     flex-direction: column;
     align-items: center;
-    min-width: 794px;
+    width: 794px;
     transition: 0.3s all;
 }
 
@@ -836,5 +836,10 @@ main{
 
     .accordion_h1 {
         font-size: 18px;
+    }
+
+    .slider_line.active {
+       width: 400px;
+       text-align: center;
     }
 }
