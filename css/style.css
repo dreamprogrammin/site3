@@ -144,6 +144,8 @@ main{
 }
 
 .frame_text h1{
+    display: inline-block;
+    position: relative;
     width: 587px;
     left: 0;
     font-family: Montserrat;
@@ -156,9 +158,13 @@ main{
     letter-spacing: -0.01em;
 
     color: #192252;
+    animation-name: animate-text;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
 }
 
 .frame_text p {
+    position: relative;
     width: 485px;
     left: 0;
     font-family: Inter;
@@ -171,6 +177,21 @@ main{
 
 
    color: #848FAC;
+   animation-name: animate-text;
+   animation-delay: 0.8s;
+   animation-duration: 1s;
+
+}
+
+@keyframes animate-text {
+    0%{
+        top: 120px;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
 }
 
 .img_frame{

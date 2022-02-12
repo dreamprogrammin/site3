@@ -38,7 +38,7 @@ const sliderActive = (n) =>{
         sliders.classList.remove('active')
     }
     sliderLine[n].classList.add('active')
-    console.log(n)
+
 }
 
 const dotsActive = (p) =>{
@@ -63,5 +63,6 @@ setInterval(() => {
         dotsActive(index)
     }
 }, 2000);
+
 
 
