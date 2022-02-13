@@ -75,7 +75,7 @@ const scrollActive = () => {
     } else {
         img1.classList.remove('active')
     }
-    if (scrollTop > 650){
+    if (scrollTop > 750){
         frameText2.classList.add('active')
     } else {
         frameText2.classList.remove('active')
