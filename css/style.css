@@ -268,8 +268,14 @@ main{
 }
 
 .img_1{
+    transform: scale(.5);
     width: 373px;
     height: 576px;
+    transition: .3s ease-in-out;
+}
+
+.img_1.active {
+    transform: scale(1);
 }
 
 .frame_text_2 {
@@ -280,7 +286,8 @@ main{
    margin-top: 185px;
 }
 
-.frame_text_2 h1 {
+.title_2 {
+    position: relative;
     max-width: 690px;
     width: 100%;
     font-family: Montserrat;
@@ -292,6 +299,14 @@ main{
     letter-spacing: -0.01em;
     
     color: #192252;
+    opacity: 0;
+    top: 50px;
+    transition: .3s ease-in-out;
+}
+
+.title_2.active{
+    opacity: 1;
+    top: 0;
 }
 
 .frame_text_2 p{

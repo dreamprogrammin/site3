@@ -64,5 +64,25 @@ setInterval(() => {
     }
 }, 2000);
 
+const img1 = document.querySelector('.img_1')
+const frameText2 = document.querySelector('.title_2')
+
+const scrollActive = () => {
+    scrollTop = window.scrollY
+    console.log(scrollTop)
+    if (scrollTop > 450){
+        img1.classList.add('active')
+    } else {
+        img1.classList.remove('active')
+    }
+    if (scrollTop > 650){
+        frameText2.classList.add('active')
+    } else {
+        frameText2.classList.remove('active')
+    }
+}
+
+
+window.addEventListener('scroll', scrollActive)
 
 
